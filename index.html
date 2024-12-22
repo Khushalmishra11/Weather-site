@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather </title>
-    <link rel="stylesheet" href="./src/style2.css">
-</head>
-<body>
-    <div class="card flex-row md:flex-1 m-10 p-1 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% rounded-2xl text-center">
-        <div class="search flex align-middle justify-between">
-            <input class="bg-white flex-1 h-12 m-5 w-100% rounded-full " type="text" placeholder="     Enter City Name" spellcheck="false">
-            <button class="rounded-full w-80px h-20px bg-white m-5 cursor-pointer "><img class="m-2 size-8" src="assest/search.png" alt="search"></button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./src/style2.css" />
+  </head>
+  <body>
+    <div
+      class="card w-90% max-w-[470px] justify-self-center mt-[100px] ml-auto mr-auto p-1 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% rounded-2xl"
+    >
+      <div class="search flex w-[100%]">
+        <input
+          class="flex-1 bg-white h-12 m-4 px-5 w-100% rounded-full text-lg"
+          type="text"
+          placeholder="    Enter City Name"
+          spellcheck="false"
+        />
+        <button class="rounded-full h-12 w-11 bg-white m-4 cursor-pointer">
+          <img class="w-4 m-3" src="assest/search.png" alt="search" />
+        </button>
+      </div>
 
-        <div class="weather text-white box text-center">
-            <img class="m-20" src="./assest/clouds.png" alt="">
-            <h1 class="temp text-6xl">20C</h1>
-            <h2 class="city text-4xl">Alwar</h2>
-        </div>
+      <div
+        class="weather text-white text-center">
+        <img class="w-40 mx-auto" src="./assest/rain.png" alt="" />
+        <h1 class="temp text-6xl">20°C</h1>
+        <h2 class="city text-4xl">Alwar</h2>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
