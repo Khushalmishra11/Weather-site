@@ -635,6 +635,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .size-8 {
   width: 2rem;
   height: 2rem;
