@@ -3,9 +3,11 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=bengaluru&unit
 
 async function checkWeather() {
     const response = await fetch(apiUrl + `&appid=${apiKey}`)
-    var data = response.json()
-    console.log(data);
-    
+    var data = await response.json()
+    console.log(data)
+    document.querySelector(".city").innerHTML = data.name
+    document.querySelector(".temp").innerHTML = data.main.temp
+
     
 }
 
